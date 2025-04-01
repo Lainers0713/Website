@@ -1,0 +1,66 @@
+<!doctype html>
+            
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>box site</title>
+<style>
+div{
+    width: 150px;
+    height: 150px;
+    background-color:rgb(63, 211, 211);
+    border:2px solid black
+}
+#one{
+    position: static;
+    z-index: 100;
+}
+#two{
+    position: relative;
+    left: 200px;
+    z-index: 50;
+}
+#three{
+    position: absolute;
+    background-color: rgb(243, 110, 132);
+    right: 100px;
+    top: 100px;
+    z-index: 600px;
+}
+#four{
+    position: fixed;
+    background-color: rgb(209, 128, 244);
+    right: 0px;
+    bottom: 100px;
+    z-index: 900px;
+}
+#five{
+    position: sticky;
+    top: 0;
+}
+</style>
+</head>
+     
+<body>
+<div id="one">
+</div>
+
+<div id="five"> 
+</div>
+
+<div id="two"> 
+</div>
+
+<div id="three">
+</div>
+
+<div id="four"> 
+</div>
+
+<div id="five"> 
+</div>
+
+</body>
+
+</html>
